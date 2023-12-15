@@ -353,3 +353,64 @@ function javamodulebtn(){
       window.location.href = "sqlhard";
     }
 
+// quizzes routes
+
+function javaeasybtn() {
+  window.location.href = "quizjavaeasy";
+}
+function javamediumbtn() {
+  window.location.href = "quizjavamedium";
+}
+function javahardbtn() {
+  window.location.href = "quizjavahard";
+}
+
+function htmleasybtn() {
+  window.location.href = "quizhtmleasy";
+}
+function htmlmediumbtn() {
+  window.location.href = "quizhtmlmedium";
+}
+function htmlhardbtn() {
+  window.location.href = "quizhtmlhard";
+}
+
+function jseasybtn() {
+  window.location.href = "quizjavaeasy";
+}
+function jsmediumbtn() {
+  window.location.href = "quizjavamedium";
+}
+function jshardbtn() {
+  window.location.href = "quizjavahard";
+}
+
+function sqleasybtn() {
+  window.location.href = "quizmysqleasy";
+}
+function sqlmediumbtn() {
+  window.location.href = "quizmysqlmedium";
+}
+function sqlhardbtn() {
+  window.location.href = "quizmysqlhard";
+}
+
+function phpeasybtn() {
+  window.location.href = "quizphpeasy";
+}
+function phpmediumbtn() {
+  window.location.href = "quizphpmedium";
+}
+function phphardbtn() {
+  window.location.href = "quizphphard";
+}
+
+function pyeasybtn() {
+  window.location.href = "quizpythoneasy";
+}
+function pymediumbtn() {
+  window.location.href = "quizpythonmedium";
+}
+function pyhardbtn() {
+  window.location.href = "quizpythonhard";
+}

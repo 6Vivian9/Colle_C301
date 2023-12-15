@@ -216,3 +216,13 @@ function pymediumbtn() {
 function pyhardbtn() {
   window.location.href = "pyhard";
 }
+// for route to quiz
+function htmleasy() {
+  window.location.href = "quizhtmleasy";
+}
+function htmlmedium() {
+  window.location.href = "quizhtmlmedium";
+}
+function htmlhard() {
+  window.location.href = "quizhtmlhard";
+}

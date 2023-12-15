@@ -132,53 +132,53 @@ Route::view('/quizhtmlhard', 'quizzes/html/qhtmlhard',[
     'title' => 'quizhtmlhard'
 ]);
 
-Route::view('/quizjavaeasy', 'quizzes/html/qjavaeasy',[
+Route::view('/quizjavaeasy', 'quizzes/java/qjavaeasy',[
     'title' => 'quizjavaeasy'
 ]);
-Route::view('/quizjavamedium', 'quizzes/html/qjavamedium',[
+Route::view('/quizjavamedium', 'quizzes/java/qjavamedium',[
     'title' => 'quizjavamedium'
 ]);
-Route::view('/quizjavahard', 'quizzes/html/qjavahard',[
+Route::view('/quizjavahard', 'quizzes/java/qjavahard',[
     'title' => 'quizjavahard'
 ]);
 
-Route::view('/quizjseasy', 'quizzes/html/qjseasy',[
+Route::view('/quizjseasy', 'quizzes/javascript/qjseasy',[
     'title' => 'quizjseasy'
 ]);
-Route::view('/quizjsmedium', 'quizzes/html/qjsmedium',[
+Route::view('/quizjsmedium', 'quizzes/javascript/qjsmedium',[
     'title' => 'quizjsmedium'
 ]);
-Route::view('/quizjshard', 'quizzes/html/qjshard',[
+Route::view('/quizjshard', 'quizzes/javascript/qjshard',[
     'title' => 'quizjshard'
 ]);
 
-Route::view('/quizmysqleasy', 'quizzes/html/qsqleasy',[
+Route::view('/quizmysqleasy', 'quizzes/mysql/qsqleasy',[
     'title' => 'quizmysqleasy'
 ]);
-Route::view('/quizmysqlmedium', 'quizzes/html/qsqlmedium',[
+Route::view('/quizmysqlmedium', 'quizzes/mysql/qsqlmedium',[
     'title' => 'quizmysqlmedium'
 ]);
-Route::view('/quizmysqlhard', 'quizzes/html/qsqlhard',[
+Route::view('/quizmysqlhard', 'quizzes/mysql/qsqlhard',[
     'title' => 'quizmysqlhard'
 ]);
 
-Route::view('/quizphpeasy', 'quizzes/html/qphpeasy',[
+Route::view('/quizphpeasy', 'quizzes/php/qphpeasy',[
     'title' => 'quizphpeasy'
 ]);
-Route::view('/quizphpmedium', 'quizzes/html/qphpmedium',[
+Route::view('/quizphpmedium', 'quizzes/php/qphpmedium',[
     'title' => 'quizphpmedium'
 ]);
-Route::view('/quizphphard', 'quizzes/html/qphphard',[
+Route::view('/quizphphard', 'quizzes/php/qphphard',[
     'title' => 'quizphphard'
 ]);
 
-Route::view('/quizpythoneasy', 'quizzes/html/qpyeasy',[
+Route::view('/quizpythoneasy', 'quizzes/python/qpyeasy',[
     'title' => 'quizpythoneasy'
 ]);
-Route::view('/quizpythonmedium', 'quizzes/html/qpymedium',[
+Route::view('/quizpythonmedium', 'quizzes/python/qpymedium',[
     'title' => 'quizpythonmedium'
 ]);
-Route::view('/quizpythonhard', 'quizzes/html/qpyhard',[
+Route::view('/quizpythonhard', 'quizzes/python/qpyhard',[
     'title' => 'quizpythonhard'
 ]);
 
