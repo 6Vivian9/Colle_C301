@@ -29,7 +29,7 @@
         <i class="bi bi-grid"></i>
         <i class='bx bx-sun' id="darkLight"></i>
         <i class='bx bx-bell' ></i>
-       <img src="{{ asset('assets/images/.jpg') }}" alt="" class="profile" />
+        <a href="profile"><img src="{{ asset('assets/images/profileicon.png') }}" alt="profile" class="profile" /></a>
       </div>
     </nav>
 

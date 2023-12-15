@@ -29,7 +29,7 @@
         <i class="bi bi-grid"></i>
         <i class='bx bx-sun' id="darkLight"></i>
         <i class='bx bx-bell' ></i>
-       <img src="{{ asset('assets/images/Bea.jpg') }}" alt="" class="profile" />
+        <a href="profile"><img src="{{ asset('assets/images/profileicon.png') }}" alt="profile" class="profile" /></a>
       </div>
     </nav>
 
@@ -175,7 +175,10 @@
                 <p>where both variables ($a and $A) are different.</p>
                 <p>PHP is similar to the C style syntax in terms of keywords and language syntax. If conditions, for and while loops, and function returns are similar in syntax to languages such as C, C++, C#, Java and Perl.</p>
 
-            
+                <br><br>
+<h2 style="text-align:left;">Take Quiz:</h2>
+<br>
+<h5 onclick="phpeasy()">Click Me To Take Quiz</h5>
             </div>
         </div>
   </nav>

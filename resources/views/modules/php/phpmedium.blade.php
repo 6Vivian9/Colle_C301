@@ -29,7 +29,7 @@
         <i class="bi bi-grid"></i>
         <i class='bx bx-sun' id="darkLight"></i>
         <i class='bx bx-bell' ></i>
-       <img src="{{ asset('assets/images/Bea.jpg') }}" alt="" class="profile" />
+        <a href="profile"><img src="{{ asset('assets/images/profileicon.png') }}" alt="profile" class="profile" /></a>
       </div>
     </nav>
 
@@ -151,7 +151,10 @@
                 <p>You can see that the code successfully ran in the browser, because I got the file path right.</p>
                 <h6>Another beautiful thing about PHP is that you can embed it in HTML. You can do it like this:</h6>
                 <img src="{{ asset('assets/images/phpmedium7.png') }}">
-
+                <br><br>
+<h2 style="text-align:left;">Take Quiz:</h2>
+<br>
+<h5 onclick="phpmedium()">Click Me To Take Quiz</h5>
             </div>
         </div>
   </nav>

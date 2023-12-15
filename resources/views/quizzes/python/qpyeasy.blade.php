@@ -29,7 +29,7 @@
         <i class="bi bi-grid"></i>
         <i class='bx bx-sun' id="darkLight"></i>
         <i class='bx bx-bell' ></i>
-       <img src="" alt="" class="profile" />
+        <a href="profile"><img src="{{ asset('assets/images/profileicon.png') }}" alt="profile" class="profile" /></a>
       </div>
     </nav>
 
@@ -100,8 +100,11 @@
                 
           <form id="quizForm">
     <div>
+      <h1 style="text-align:center;">HTML EASY QUIZ</h1>
+      <br>
         <ol>
-      <li> Who was created the Python? </li>
+
+        <li> Who was created the Python? </li>
       <input type="radio" name="question1"> A.Henry Sy<br>
       <input type="radio" name="question1" id="correct1">B.Guido van Rossum
 <br>
@@ -160,12 +163,15 @@
       <input type="radio" name="question10" id="correct10">A.True<br>
       <input type="radio" name="question10">B.False<br>
      
+
+
+
       <input type="button" name="submit" value="SubmitQuiz" onClick="calculateScore()">
   </form>
   <div id="myModal" class="modal">
     <div class="modal-content">
-      <span class="close" onClick="closeModal()">Close</span>
-      <p id="scoreDisplay"></p>
+      <p>    <a id="scoreDisplay"></a> <span class="close" onClick="closeModal()">Close</span></p>
+
     </div>
   </div>
 
@@ -177,6 +183,8 @@
   </nav>
     </main>
 
+
+
               <!-- JavaScript -->
     <script src="{{ asset('assets/js/quiz.js') }}"></script>
     
@@ -185,3 +193,4 @@
 
     </body>
   </html>
+      

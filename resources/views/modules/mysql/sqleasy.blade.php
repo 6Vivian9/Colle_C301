@@ -29,7 +29,7 @@
         <i class="bi bi-grid"></i>
         <i class='bx bx-sun' id="darkLight"></i>
         <i class='bx bx-bell' ></i>
-       <img src="{{ asset('assets/images/Bea.jpg') }}" alt="" class="profile" />
+        <a href="profile"><img src="{{ asset('assets/images/profileicon.png') }}" alt="profile" class="profile" /></a>
       </div>
     </nav>
 
@@ -239,8 +239,10 @@
                   <li>Import CSV File Into MySQL Table – show you how to use LOAD DATA INFILE statement to import CSV files into a MySQL table.</li>
                   <li>Export MySQL Table to CSV –  learn various techniques of how to export MySQL table to a CSV file format.</li>
                 </ul>
-
-                
+                <br><br>
+<h2 style="text-align:left;">Take Quiz:</h2>
+<br>
+<h5 onclick="mysqleasy()">Click Me To Take Quiz</h5>
             </div>
         </div>
   </nav>

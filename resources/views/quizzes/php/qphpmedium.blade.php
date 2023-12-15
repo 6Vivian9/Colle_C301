@@ -29,7 +29,7 @@
         <i class="bi bi-grid"></i>
         <i class='bx bx-sun' id="darkLight"></i>
         <i class='bx bx-bell' ></i>
-       <img src="" alt="" class="profile" />
+        <a href="profile"><img src="{{ asset('assets/images/profileicon.png') }}" alt="profile" class="profile" /></a>
       </div>
     </nav>
 
@@ -100,8 +100,11 @@
                 
           <form id="quizForm">
     <div>
+      <h1 style="text-align:center;">HTML EASY QUIZ</h1>
+      <br>
         <ol>
-      <li> What was the original meaning of the abbreviation PHP? </li>
+
+         <li> What was the original meaning of the abbreviation PHP? </li>
       <input type="radio" name="question1"id="correct1"> A.  Personal Homepage<br>
       <input type="radio" name="question1" >B. Preprocessor Hypertext<br>
       <input type="radio" name="question1">C. Programming Hyper Platform<br>
@@ -167,12 +170,14 @@
 	  <input type="radio" name="question10" >C.  By placing it in a <php> tag<br>
       <input type="radio" name="question10"id="correct10">D.  Between <?php ?> tags<br><br>
      
+
+
       <input type="button" name="submit" value="SubmitQuiz" onClick="calculateScore()">
   </form>
   <div id="myModal" class="modal">
     <div class="modal-content">
-      <span class="close" onClick="closeModal()">Close</span>
-      <p id="scoreDisplay"></p>
+      <p>    <a id="scoreDisplay"></a> <span class="close" onClick="closeModal()">Close</span></p>
+
     </div>
   </div>
 
@@ -184,6 +189,8 @@
   </nav>
     </main>
 
+
+
               <!-- JavaScript -->
     <script src="{{ asset('assets/js/quiz.js') }}"></script>
     
@@ -192,3 +199,4 @@
 
     </body>
   </html>
+     

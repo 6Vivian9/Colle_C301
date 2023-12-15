@@ -29,7 +29,7 @@
         <i class="bi bi-grid"></i>
         <i class='bx bx-sun' id="darkLight"></i>
         <i class='bx bx-bell' ></i>
-       <img src="{{ asset('assets/images/Bea.jpg') }}" alt="" class="profile" />
+        <a href="profile"><img src="{{ asset('assets/images/profileicon.png') }}" alt="profile" class="profile" /></a>
       </div>
     </nav>
 
@@ -323,10 +323,10 @@
 <img src="{{ asset('assets/images/jsmed24.png') }}">
 </ul>
 
-
-
-
-
+<br><br>
+<h2 style="text-align:left;">Take Quiz:</h2>
+<br>
+<h5 onclick="jsmedium()">Click Me To Take Quiz</h5>
             </div>
         </div>
   </nav>

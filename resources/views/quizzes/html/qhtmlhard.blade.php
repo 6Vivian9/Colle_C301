@@ -29,7 +29,7 @@
         <i class="bi bi-grid"></i>
         <i class='bx bx-sun' id="darkLight"></i>
         <i class='bx bx-bell' ></i>
-       <img src="" alt="" class="profile" />
+        <a href="profile"><img src="{{ asset('assets/images/profileicon.png') }}" alt="profile" class="profile" /></a>
       </div>
     </nav>
 
@@ -166,8 +166,8 @@
   </form>
   <div id="myModal" class="modal">
     <div class="modal-content">
-      <span class="close" onClick="closeModal()">Close</span>
-      <p id="scoreDisplay"></p>
+      <p>    <a id="scoreDisplay"></a> <span class="close" onClick="closeModal()">Close</span></p>
+
     </div>
   </div>
 

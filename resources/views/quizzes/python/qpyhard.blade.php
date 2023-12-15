@@ -1,4 +1,3 @@
-PHP (MEDIUM)
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -30,7 +29,7 @@ PHP (MEDIUM)
         <i class="bi bi-grid"></i>
         <i class='bx bx-sun' id="darkLight"></i>
         <i class='bx bx-bell' ></i>
-       <img src="" alt="" class="profile" />
+        <a href="profile"><img src="{{ asset('assets/images/profileicon.png') }}" alt="profile" class="profile" /></a>
       </div>
     </nav>
 
@@ -101,8 +100,11 @@ PHP (MEDIUM)
                 
           <form id="quizForm">
     <div>
+      <h1 style="text-align:center;">HTML EASY QUIZ</h1>
+      <br>
         <ol>
-      <li> What is the purpose of the init method in Python classes? </li>
+
+        <li> What is the purpose of the init method in Python classes? </li>
       <input type="radio" name="question1"> A.It is called when an object is created and initializes its attributes.<br>
       <input type="radio" name="question1" id="correct1">B.It is used to define a class constructor.
 <br>
@@ -166,12 +168,15 @@ PHP (MEDIUM)
 	  <input type="radio" name="question10" id="correct10">C.It returns the name of the current module.<br>
       <input type="radio" name="question10">D.It is used to check if a variable exists.<br><br>
      
+
+
+
       <input type="button" name="submit" value="SubmitQuiz" onClick="calculateScore()">
   </form>
   <div id="myModal" class="modal">
     <div class="modal-content">
-      <span class="close" onClick="closeModal()">Close</span>
-      <p id="scoreDisplay"></p>
+      <p>    <a id="scoreDisplay"></a> <span class="close" onClick="closeModal()">Close</span></p>
+
     </div>
   </div>
 
@@ -183,6 +188,8 @@ PHP (MEDIUM)
   </nav>
     </main>
 
+
+
               <!-- JavaScript -->
     <script src="{{ asset('assets/js/quiz.js') }}"></script>
     
@@ -191,3 +198,4 @@ PHP (MEDIUM)
 
     </body>
   </html>
+      

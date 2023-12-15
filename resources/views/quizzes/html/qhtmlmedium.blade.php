@@ -29,7 +29,7 @@
         <i class="bi bi-grid"></i>
         <i class='bx bx-sun' id="darkLight"></i>
         <i class='bx bx-bell' ></i>
-       <img src="" alt="" class="profile" />
+        <a href="profile"><img src="{{ asset('assets/images/profileicon.png') }}" alt="profile" class="profile" /></a>
       </div>
     </nav>
 
@@ -100,8 +100,11 @@
                 
           <form id="quizForm">
     <div>
+      <h1 style="text-align:center;">HTML EASY QUIZ</h1>
+      <br>
         <ol>
-      <li>What does the HTML `< br>` tag do?</li>
+
+        <li>What does the HTML `< br>` tag do?</li>
       <input type="radio" name="question1">A.Breaks the document into sections<br>
       <input type="radio" name="question1" id="correct1">B.Creates a line break<br>
       <input type="radio" name="question1">C.Defines a bold text<br>
@@ -151,12 +154,15 @@
       <input type="radio" name="question10" id="correct10">B.It defines a footer for the HTML document.<br>
       <input type="radio" name="question10">C.It specifies the version of HTML being used.<br>
 
+
+
+
       <input type="button" name="submit" value="SubmitQuiz" onClick="calculateScore()">
   </form>
   <div id="myModal" class="modal">
     <div class="modal-content">
-      <span class="close" onClick="closeModal()">Close</span>
-      <p id="scoreDisplay"></p>
+      <p>    <a id="scoreDisplay"></a> <span class="close" onClick="closeModal()">Close</span></p>
+
     </div>
   </div>
 
@@ -178,3 +184,5 @@
 
     </body>
   </html>
+
+      

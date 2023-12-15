@@ -29,7 +29,7 @@
         <i class="bi bi-grid"></i>
         <i class='bx bx-sun' id="darkLight"></i>
         <i class='bx bx-bell' ></i>
-       <img src="{{ asset('assets/images/Bea.jpg') }}" alt="" class="profile" />
+        <a href="profile"><img src="{{ asset('assets/images/profileicon.png') }}" alt="profile" class="profile" /></a>
       </div>
     </nav>
 
@@ -171,10 +171,10 @@
 <p>Mastering asynchronous JavaScript and understanding the Event Loop, microtasks, and macro tasks empowers developers to write efficient, non-blocking code. Techniques like Web Workers and performance optimization strategies further enhance application responsiveness and user experience.</p>
 <p>Feel free to explore these concepts deeper and experiment with various scenarios to solidify your understanding and harness the full potential of JavaScript's asynchronous nature.</p>
 
-
-
-
-
+<br><br>
+<h2 style="text-align:left;">Take Quiz:</h2>
+<br>
+<h5 onclick="jshard()">Click Me To Take Quiz</h5>
             </div>
         </div>
   </nav>

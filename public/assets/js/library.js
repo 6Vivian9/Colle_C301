@@ -376,13 +376,13 @@ function htmlhardbtn() {
 }
 
 function jseasybtn() {
-  window.location.href = "quizjavaeasy";
+  window.location.href = "quizjseasy";
 }
 function jsmediumbtn() {
-  window.location.href = "quizjavamedium";
+  window.location.href = "quizjsmedium";
 }
 function jshardbtn() {
-  window.location.href = "quizjavahard";
+  window.location.href = "quizjshard";
 }
 
 function sqleasybtn() {

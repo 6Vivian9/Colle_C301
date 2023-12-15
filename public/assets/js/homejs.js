@@ -72,26 +72,57 @@ if (window.innerWidth < 1000) {
 
 function menujavapop() {
   document.getElementById("info-menujavapopup").style.display = "block";
+  document.getElementById("info-menuhtmlpopup" ).style.display = "none";
+  document.getElementById("info-menujspopup" ).style.display = "none";
+  document.getElementById("info-menuphppopup").style.display = "none";
+  document.getElementById("info-menupypopup").style.display = "none";
+  document.getElementById("info-menusqlpopup" ).style.display = "none";
 }
 
 function menuhtmlpop() {
   document.getElementById("info-menuhtmlpopup").style.display = "block";
+  document.getElementById("info-menujavapopup" ).style.display = "none";
+  document.getElementById("info-menujspopup" ).style.display = "none";
+  document.getElementById("info-menuphppopup").style.display = "none";
+  document.getElementById("info-menupypopup").style.display = "none";
+  document.getElementById("info-menusqlpopup" ).style.display = "none";
+
 }
 
 function menujspop() {
   document.getElementById("info-menujspopup").style.display = "block";
+  document.getElementById("info-menujavapopup" ).style.display = "none";
+  document.getElementById("info-menuhtmlpopup" ).style.display = "none";
+  document.getElementById("info-menuphppopup").style.display = "none";
+  document.getElementById("info-menupypopup").style.display = "none";
+  document.getElementById("info-menusqlpopup" ).style.display = "none";
 }
 
 function menuphppop() {
   document.getElementById("info-menuphppopup").style.display = "block";
+  document.getElementById("info-menujavapopup" ).style.display = "none";
+  document.getElementById("info-menuhtmlpopup" ).style.display = "none";
+  document.getElementById("info-menujspopup" ).style.display = "none";
+  document.getElementById("info-menupypopup").style.display = "none";
+  document.getElementById("info-menusqlpopup" ).style.display = "none";
 }
 
 function menupypop() {
   document.getElementById("info-menupypopup").style.display = "block";
+  document.getElementById("info-menujavapopup" ).style.display = "none";
+  document.getElementById("info-menuhtmlpopup" ).style.display = "none";
+  document.getElementById("info-menujspopup" ).style.display = "none";
+  document.getElementById("info-menuphppopup").style.display = "none";
+  document.getElementById("info-menusqlpopup" ).style.display = "none";
 }
 
 function menusqlpop() {
   document.getElementById("info-menusqlpopup").style.display = "block";
+  document.getElementById("info-menujavapopup" ).style.display = "none";
+  document.getElementById("info-menuhtmlpopup" ).style.display = "none";
+  document.getElementById("info-menujspopup" ).style.display = "none";
+  document.getElementById("info-menuphppopup").style.display = "none";
+  document.getElementById("info-menupypopup").style.display = "none";
 }
 
 
@@ -225,4 +256,49 @@ function htmlmedium() {
 }
 function htmlhard() {
   window.location.href = "quizhtmlhard";
+}
+function javaeasy() {
+  window.location.href = "quizjavaeasy";
+}
+function javamedium() {
+  window.location.href = "quizjavamedium";
+}
+function javahard() {
+  window.location.href = "quizjavahard";
+}
+function jseasy() {
+  window.location.href = "quizjseasy";
+}
+function jsmedium() {
+  window.location.href = "quizjsmedium";
+}
+function jshard() {
+  window.location.href = "quizjshard";
+}
+function mysqleasy() {
+  window.location.href = "quizmysqleasy";
+}
+function mysqlmedium() {
+  window.location.href = "quizmysqlmedium";
+}
+function mysqlhard() {
+  window.location.href = "quizmysqlhard";
+}
+function phpeasy() {
+  window.location.href = "quizphpeasy";
+}
+function phpmedium() {
+  window.location.href = "quizphpmedium";
+}
+function phphard() {
+  window.location.href = "quizphphard";
+}
+function pythoneasy() {
+  window.location.href = "quizpythoneasy";
+}
+function pythonmedium() {
+  window.location.href = "quizpythonmedium";
+}
+function pythonhard() {
+  window.location.href = "quizpythonhard";
 }

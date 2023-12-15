@@ -29,7 +29,7 @@
         <i class="bi bi-grid"></i>
         <i class='bx bx-sun' id="darkLight"></i>
         <i class='bx bx-bell' ></i>
-       <img src="{{ asset('assets/images/Bea.jpg') }}" alt="" class="profile" />
+        <a href="profile"><img src="{{ asset('assets/images/profileicon.png') }}" alt="profile" class="profile" /></a>
       </div>
     </nav>
 
@@ -313,7 +313,10 @@
 <p><b>NOTE:</b> There are also other modules in Python but here we discuss only two modules to understand how the concept of modules in Python works and you can similarly use the other Python built-in modules also.</p>
 
 
-
+<br><br>
+<h2 style="text-align:left;">Take Quiz:</h2>
+<br>
+<h5 onclick="pythonhard()">Click Me To Take Quiz</h5>
             
             </div>
         </div>
