@@ -9,42 +9,13 @@
     <title>Library Management System</title>
     <link rel="stylesheet" href="{{ asset('assets/css/video.css') }}" />
   </head>
-  <style>
-    .body{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        background-color: #f5f5f5;
-    }
 
-    video {
-        margin: auto;
-        display: block; /* This ensures that the margin: auto works */
-        width: 640px; /* Set your desired width */
-        height: 360px; /* Set your desired height */
-    }
-</style>
-
-  <body>
-    <br><br><br><br>
-    <div class="video-container">
-    <h1 class="video" id="Title">Videos</h1>
-    <br><br><br><br>
-    <h1 class="video-title" id="program">What is JavaScript?</h1>
-    </div>
-    <div style="width: 300px; word-wrap: break-word;"></div>
-    <h3 class="video-title">JavaScript is a versatile programming language primarily used to create interactive effects within web browsers. It's commonly abbreviated as JS. Developed in the mid-1990s, JavaScript was initially designed to make web pages more dynamic by allowing client-side scripts to interact with the user, modify content, and control the behavior of web pages.</h3>
-    <video id="pythonTutorial" controls>
-<source src="{{ asset('assets/vids/JavaScript Tutorial for Beginners Learn JavaScript.mp4') }}" type="video/mp4">
-    </video>
     <!-- navbar -->
     <nav class="navbar">
       <div class="logo_item">
         
         <i class="bx bx-menu" id="sidebarOpen"></i>
-        <img src="img/TS Logo.png" alt="">TECH SKILL
+        <img src="{{ asset('assets/images/TS Logo.png') }}" alt="">TECH SKILL
       </div>
 
 
@@ -96,22 +67,41 @@
               <span class="navlink">Videos</span>
             </a>
           </li>
-		  
+  
+		  <ul class="menu_items">
+          <li class="item">
+            <a href="flashcards" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bxs-card"></i>
+              </span>
+              <span class="navlink">Flashcard</span>
+            </a>
+          </li>
+		
+          <!-- end -->
 		  
         <!-- Sidebar Open / Close -->
         <div class="bottom_content">
           <div class="bottom expand_sidebar">
-            <span> Expand</span>
+            <span> ‎ ‎ ‎ ‎ ‎ ‎ </span>
             <i class='bx bx-log-in' ></i>
           </div>
           <div class="bottom collapse_sidebar">
-            <span> Collapse</span>
+            <span> ‎ ‎ ‎ ‎ ‎ ‎ </span>
             <i class='bx bx-log-out'></i>
           </div>
         </div>
       </div>
     </nav>
-
+    <body>
+    <div class="video-container">
+      <div class="box-container">
+        <h1 class="video-title" id="program">What is JavaScript?</h1>
+        <p class="video-title" id="htmlDescription">
+        JavaScript is a versatile programming language primarily used to create interactive effects within web browsers. It's commonly abbreviated as JS. Developed in the mid-1990s, JavaScript was initially designed to make web pages more dynamic by allowing client-side scripts to interact with the user, modify content, and control the behavior of web pages.    </p>
+        <video class="box-container" id="HTML Tutorial for Beginners HTML Crash Course.mp4" controls>
+        <source src="{{ asset('assets/vids/JavaScript Tutorial for Beginners Learn JavaScript.mp4') }}" type="video/mp4">      </div>
+    </div>
     <!-- JavaScript -->
     <script src="script.js"></script>
   </body>

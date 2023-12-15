@@ -116,7 +116,7 @@
 <p>Now, here what we will be doing is to break the complete code into separate parts and simply create one module for all these operations or separate modules for each of the operations. And then we can call these modules in our main program logic.</p>
 <p>Here the core idea is to minimize the code, and if we create modules, it doesn’t mean we can only use it for this program, but we can even call these modules for other programs as well.</p>
 
-// image here 
+<img src="{{ asset('assets/images/pythonhard1.png') }}">
 
 <p>Now that we have understood the concept of modules, let us try to understand how we can create and use a module in python and also see some other functionalities related to Modules.</p>
 <b>How to create Python Modules?</b>
@@ -125,7 +125,7 @@
 <p>In this program, a function is created with the name <b>“welcome”</b> and save this file with the name <b>mymodule.py</b> i.e. name of the file, and with the extension <b>“.py”.</b></p>
 <p>We saved the following code in a file named <b>mymodule.py</b></p>
 
-// image here 
+<img src="{{ asset('assets/images/pythonhard2.png') }}">
 
 <br>
 <h4 style="text-align:left;">How to use Python Modules?</h4>
@@ -135,7 +135,7 @@
 <b>For Example,</b>
 <p>In this example, we will Import the module named mymodule, and then call the welcome function with a given argument:</p>
 
-// image here 
+<img src="{{ asset('assets/images/pythonhard3.png') }}">
 
 <b>Output:</b>
 <p>Hello, Jonathan</p>
@@ -147,11 +147,11 @@
 <p>Save this code in the file <b>mymodule.py</b></p>
 <b>For Example</b>
 
-// image here 
+<img src="{{ asset('assets/images/pythonhard4.png') }}">
 
 <p>In this example, we will Import the module named mymodule, and then try to access the person1 dictionary components:</p>
 
-// image here 
+<img src="{{ asset('assets/images/pythonhard5.png') }}">
 
 <b>Output:</b>
 
@@ -166,7 +166,7 @@
 
 <p>Create an alias for mymodule with the name <b>mx_module:</b></p>
 
-// image here 
+<img src="{{ asset('assets/images/pythonhard6.png') }}">
 
 <b>Output:</b>
 <p>36</p>
@@ -177,11 +177,11 @@
 <b>For Example,</b>
 <p>Now, we have a module named <b>mymodule</b> that has one function and one dictionary:</p>
 
-// image here 
+<img src="{{ asset('assets/images/pythonhard7.png') }}">
 
 <p>Now, Let’s try to Import only the person1 dictionary from the module named <b>mymodule:</b></p>
 
-// image here 
+<img src="{{ asset('assets/images/pythonhard8.png') }}">
 
 <b>Output:</b>
 <p>36</p>
@@ -195,7 +195,7 @@
 <h4 style="text-align:left;">Re-naming a Module</h4>
 <p>You can create an alias when you import a module, by using the as keyword:</p>
 
-// image here 
+<img src="{{ asset('assets/images/pythonhard9.png') }}">
 
 <b>Output:</b>
 <p>36</p>
@@ -229,7 +229,7 @@
 
 <p>The output to the above code is shown below:</p>
 
-// image here 
+<img src="{{ asset('assets/images/pythonhard10.png') }}">
 
 <p>Now, let’s discuss some of the useful and frequently used built-in modules of Python.</p>
 

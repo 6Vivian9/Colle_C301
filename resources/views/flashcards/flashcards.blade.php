@@ -8,15 +8,13 @@
     <link rel="icon" type="image/x-icon" href="{{ asset('assets/images/Favicon.png') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Library Management System</title>
-    <link rel="stylesheet" href="{{ asset('assets/css/home.css') }}" />
-        <link rel="stylesheet" href="{{ asset('assets/css/flashcard.css') }}" />
-        <link rel="stylesheet" href="{{ asset('assets/css/flashcard2.css') }}" />
+        <link rel="stylesheet" href="{{ asset('assets/css/flashcard3.css') }}" />
+
 
   </head>
   <body>
   
-    <!-- navbar -->
-    <nav class="navbar">
+  <nav class="navbar">
       <div class="logo_item">
         
         <i class="bx bx-menu" id="sidebarOpen"></i>
@@ -32,7 +30,7 @@
         <i class="bi bi-grid"></i>
         <i class='bx bx-sun' id="darkLight"></i>
         <i class='bx bx-bell' ></i>
-       <a href="profile"><img src="{{ asset('assets/images/profileicon.png') }}" alt="profile" class="profile" /></a>
+        <a href="profile"><img src="{{ asset('assets/images/profileicon.png') }}" alt="profile" class="profile" /></a>
       </div>
     </nav>
 
@@ -81,62 +79,53 @@
               </span>
               <span class="navlink">Flashcard</span>
             </a>
-          </li>	  
+          </li>
+		
           <!-- end -->
 		  
         <!-- Sidebar Open / Close -->
         <div class="bottom_content">
           <div class="bottom expand_sidebar">
-            <span> Expand</span>
+            <span> ‎ ‎ ‎ ‎ ‎ ‎ </span>
             <i class='bx bx-log-in' ></i>
           </div>
           <div class="bottom collapse_sidebar">
-            <span> Collapse</span>
+            <span> ‎ ‎ ‎ ‎ ‎ ‎ </span>
             <i class='bx bx-log-out'></i>
           </div>
         </div>
       </div>
     </nav>
     <main>
-        <nav>
-            <div class="flex-container">
-                <div class="box" >
-                <img src="{{ asset('assets/images/Java.png') }}">
-                    <p>Java</p>
-                    <a href="flashjava" class="btn">START</a>
-                </div>
-                <div class="box" >
-                <img src="{{ asset('assets/images/HTML.png') }}">
-                    <p>Hyper Text Markup Language</p>
-                    <a href="flashhtml" class="btn">START</a>
-                </div>
-                <div class="box" >
-                <img src="{{ asset('assets/images/Javascript.png') }}">
-                    <p>JavaScript</p>
-                    <a href="flashjs" class="btn">START</a>
-                </div>
-            </div>
-        </nav>
-        <nav>
-            <div class="flex-container">
-                <div class="box">
-                <img src="{{ asset('assets/images/php.png') }}">
-                    <p>PHP: Hypertext Preprocessor</p>
-                    <a href="flashphp" class="btn">START</a>
-                </div>
-                <div class="box">
-                <img src="{{ asset('assets/images/Python.png') }}">
-                    <p>Python</p>
-                    <a href="flashpy" class="btn">START</a>
-                </div>
-                <div class="box">
-                <img src="{{ asset('assets/images/mySql.png') }}">
-                    <p>Structured Query Language</p>
-                    <a href="flashsql" class="btn">START</a>
-                </div>
-            </div>
-        </nav>
-    </main>
+  <nav>
+    <div class="flex-container">
+      <a href="flashjava" class="box">
+        <img src="{{ asset('assets/images/Java.png') }}">
+        <p>Java</p>
+      </a>
+      <a href="flashhtml" class="box">
+        <img src="{{ asset('assets/images/HTML.png') }}">
+        <p>Hyper Text Markup Language</p>
+      </a>
+      <a href="flashjs" class="box">
+        <img src="{{ asset('assets/images/Javascript.png') }}">
+        <p>JavaScript</p>
+      </a>
+      <a href="flashphp" class="box">
+        <img src="{{ asset('assets/images/php.png') }}">
+        <p>PHP: Hypertext Preprocessor</p>
+      </a>
+      <a href="flashpy" class="box">
+        <img src="{{ asset('assets/images/Python.png') }}">
+        <p>Python</p>
+      </a>
+      <a href="flashsql" class="box">
+        <img src="{{ asset('assets/images/mySql.png') }}">
+        <p>Structured Query Language</p>
+      </a>
+    </div>
+  </nav>
+</main>
  
  
     <!-- JavaScript -->

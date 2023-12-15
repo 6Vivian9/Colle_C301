@@ -8,7 +8,7 @@
     <link rel="icon" type="image/x-icon" href="{{ asset('assets/images/Favicon.png') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Library Management System</title>
-    <link rel="stylesheet" href="{{ asset('assets/css/home.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/video.css') }}" />
   </head>
   <body>
   
@@ -96,35 +96,35 @@
       </div>
     </nav>
     <main>
-      <nav>
-        <div class="flex-container">
-          <div class="box" onclick="menujavapop()">
-                <img src="{{ asset('assets/images/Java.png') }}">
-                <p>Java</p>
-            </div>
-            <div class="box" onclick="menuhtmlpop()">
-                <img src="{{ asset('assets/images/HTML.png') }}">
-                <p>Hyper Text Markup Language</p>
-            </div>
-            <div class="box" onclick="menujspop()">
-              <img src="{{ asset('assets/images/Javascript.png') }}">
-              <p>JavaScript</p>
-          </div>
-          <div class="box" onclick="menuphppop()">
-                <img src="{{ asset('assets/images/php.png') }}">
-                <p>PHP: Hypertext Preprocessor</p>
-            </div>
-            <div class="box" onclick="menupypop()">
-                <img src="{{ asset('assets/images/Python.png') }}">
-                <p>Python</p>
-            </div>
-            <div class="box" onclick="menusqlpop()">
-              <img src="{{ asset('assets/images/mySql.png') }}">
-              <p>Structured Query Language</p>
-          </div>
-        </div>
+  <nav>
+    <div class="flex-container">
+      <a href="java" class="box">
+        <img src="{{ asset('assets/images/Java.png') }}">
+        <p>Java</p>
+      </a>
+      <a href="html" class="box">
+        <img src="{{ asset('assets/images/HTML.png') }}">
+        <p>Hyper Text Markup Language</p>
+      </a>
+      <a href="javascript" class="box">
+        <img src="{{ asset('assets/images/Javascript.png') }}">
+        <p>JavaScript</p>
+      </a>
+      <a href="php" class="box">
+        <img src="{{ asset('assets/images/php.png') }}">
+        <p>PHP: Hypertext Preprocessor</p>
+      </a>
+      <a href="python" class="box">
+        <img src="{{ asset('assets/images/Python.png') }}">
+        <p>Python</p>
+      </a>
+      <a href="mysql" class="box">
+        <img src="{{ asset('assets/images/mySql.png') }}">
+        <p>Structured Query Language</p>
+      </a>
+    </div>
   </nav>
-    </main>
+</main>
 
       
     </div>

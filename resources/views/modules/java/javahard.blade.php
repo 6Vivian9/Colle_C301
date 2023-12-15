@@ -52,7 +52,7 @@
 
           <ul class="menu_items">
           <li class="item">
-            <a href="#" class="nav_link">
+            <a href="library" class="nav_link">
               <span class="navlink_icon">
                 <i class="bx bxs-grid-alt"></i>
               </span>
@@ -72,7 +72,7 @@
   
 		  <ul class="menu_items">
           <li class="item">
-            <a href="#" class="nav_link">
+            <a href="flashcards" class="nav_link">
               <span class="navlink_icon">
                 <i class="bx bxs-card"></i>
               </span>
@@ -113,18 +113,18 @@
                 <h2 style="text-align:left;">Module Declarations</h2>
 <p>At the core of each module is the module declaration, a file with the name module-info.java that defines all properties of a module. As an example, here’s the one for java.sql, the platform module that defines the JDBC API:</p>
 
-// image here  
+<img src="{{ asset('assets/images/javahard1.png') }}">
 
 <p>It defines the module’s name (java.sql), its dependencies on other modules ((java.logging, java.transaction.xa, java.xml), the packages that make up its public API (java.sql and javax.sql), and which services it uses (java.sql.Driver). This module already employs a more refined form to define dependencies by adding the keyword transitive but does of course not use all capabilities of the module system. Generally speaking, a module declaration has the following basic form:</P>
 
-// image here
+<img src="{{ asset('assets/images/javahard2.png') }}">
 
 <p>(The entire module can be open and the requires, exports, and opens directives can be further refined, but those are topics for later.)</p>
 <br>
 <p>You can create module declarations for your projects. Their recommended location - where all tools will pick them up the easiest - is in a project’s source root folder, i.e. the folder containing your package directories, often src/main/java. For a library, a module declaration might look like this:</p>
-// image here 
+<img src="{{ asset('assets/images/javahard3.png') }}">
 <p>For an app, it might be something like this:</p>
-// image here 
+<img src="{{ asset('assets/images/javahard4.png') }}">
 <p>Let’s quickly go over the details. This section focuses on what needs to go into the module declaration:</p>
 <ul>
 <li>module name</li>
@@ -150,7 +150,7 @@
 <br>
 <h2 style="text-align:left;">Requiring Dependencies</h2>
 <p>The requires directives list all direct dependencies by their module names. Take a look at those from the three modules above:</p>
-// image here
+<img src="{{ asset('assets/images/javahard5.png') }}">
 <p>We can see that the app module com.example.app depends on the library com.example.lib, which in turn needs the unrelated module com.sample.other and the platform module java.sql. We don't have the declaration of com.sample.other but we know that java.sql depends on java.logging, java.transaction.xa, and java.xml. If we look those up, we see that they have no further dependencies. (Or rather, no explicit dependencies - check the section on the base module below for more details.)</p>
 <br>
 <p>It is also possible to handle optional dependencies (with requires static) and to "forward" dependencies that are part of a module’s API (with requires transitive), but that;s covered in separate articles.</p>
@@ -164,7 +164,7 @@
                 <li>all types and members in open packages can be accessed at run time via reflection</li>
                 </ul>
 <p>Here are the exports and opens directives from the three example modules:</p>
-// image here
+<img src="{{ asset('assets/images/javahard6.png') }}">
 <p>This shows that java.sql exports a package of the same name as well as javax.sql - the module contains a lot more packages of course, but they are not part of its API and don't concern us. The library module exports two packages to be used by other modules - again, all other (potential) packages are safely locked away. The app module exports no packages, which isn't uncommon as the module launching the application is rarely a dependency of other modules and so nobody calls into it. It does open com.example.app.entities for reflection though - judging by the name probably because it contains entities that other modules want to interact with via reflection (think JPA).</p>
 <p>There are also qualified variants of the exports and opens directives that allow you to export/open a package to specific modules only.</p>
 <p>As a rule of thumb, try to export as few packages as possible - just like keeping fields private, only making methods package-visible or public if needed, and making classes package-visible by default and only public if needed in another package. This reduces the amount of code that is visible elsewhere, which reduces complexity.</P>
@@ -172,7 +172,7 @@
 <h2 style="text-align:left;">Using and Providing Services</h2>
 <p>Services are their own topic - for now it suffices to say that you can use them to decouple the user of an API from its implementation, making it easier to replace it as late as when launching the application. If a module uses a type (an interface or a class) as a service, it needs to state that in the module declaration with the uses directive, which includes the fully qualified type name. Modules providing a service express in their module declaration which of their own types do that (usually by implementing or extending it).</p>
 <p>The library and app example modules show the two sides:</p>
-// image here 
+<img src="{{ asset('assets/images/javahard7.png') }}">
 <p>The lib module uses Service, one of its own types, as a service and the app module, which depends on the lib module, provides it with MyService. At run time the lib module will then access all classes that implement / extend the service type by using the ServiceLoader API with a call as simple as ServiceLoader.load(Service.class). That means the library module executes behavior defined in the app module even though it doesn't depend on it - that's great to untangle dependencies and keep modules focused in their concerns.</p>
 <br>
 <h2 style="text-align:left;">Building and Launching Modules</h2>
@@ -197,7 +197,7 @@
 <br>
 <h2 style="text-align:left;">Module Resolution and Module Graph</h2>
 <p>To launch a modular app, run the java command with a module path and a so-called initial module - the module that contains the main method:</p>
-// image here
+<img src="{{ asset('assets/images/javahard8.png') }}">
 <p>This will start a process called module resolution: Beginning with the initial module's name, the module system will search the module path for it. If it finds it, it will check its requires directives to see what modules it needs and then repeats the process for them. If it doesn't find a module, it will throw an error then and there, letting you know a dependency is missing. You can observe this process by adding the command line option --show-module-resolution.</p>
 <p>The result of this process is the module graph. Its nodes are modules, its edges are a bit more complicated: Each requires directive spawns an edge between the two modules, called a readability edge where the requiring module reads the required one. There are other ways to create edges but that doesn't need to concern us now because it doesn't change anything fundamental.</p>
 <p>If we imagine an average Java program, for example a backend for a web app, we can picture it's module graph: At the top we'll find the initial module, further down the other app modules as well as the frameworks and libraries they use. Then come their dependencies and at some point the JDK modules with java.base at the bottom - read on for details on that.</p>

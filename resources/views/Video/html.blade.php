@@ -9,42 +9,13 @@
     <title>Library Management System</title>
     <link rel="stylesheet" href="{{ asset('assets/css/video.css') }}" />
   </head>
-  <style>
-    .body{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        background-color: #f5f5f5;
-    }
 
-    video {
-        margin: auto;
-        display: block; /* This ensures that the margin: auto works */
-        width: 640px; /* Set your desired width */
-        height: 360px; /* Set your desired height */
-    }
-</style>
-
-  <body>
-    <br><br><br><br>
-    <div class="video-container">
-    <h1 class="video" id="Title">Videos</h1>
-    <br><br><br><br>
-    <h1 class="video-title" id="program">What is HTML?</h1>
-    </div>
-    <div style="width: 300px; word-wrap: break-word;"></div>
-    <h3 class="video-title" id="htmlDescription">HTML stands for Hypertext Markup Language. It's the standard language used to create and design web pages. HTML provides the structure and content of a webpage by using a markup system of tags, defining elements such as headings, paragraphs, images, links, and more.</h3>
-    <video id="HTML Tutorial for Beginners HTML Crash Course.mp4" controls>
-        <source src="{{ asset('assets/vids/HTML Tutorial for Beginners HTML Crash Course.mp4') }}" type="video/mp4">
-    </video>
     <!-- navbar -->
     <nav class="navbar">
       <div class="logo_item">
         
         <i class="bx bx-menu" id="sidebarOpen"></i>
-        <img src="img/TS Logo.png" alt="">TECH SKILL
+        <img src="{{ asset('assets/images/TS Logo.png') }}" alt="">TECH SKILL
       </div>
 
 
@@ -106,23 +77,34 @@
               <span class="navlink">Flashcard</span>
             </a>
           </li>
-		  
+		
           <!-- end -->
 		  
         <!-- Sidebar Open / Close -->
         <div class="bottom_content">
           <div class="bottom expand_sidebar">
-            <span> Expand</span>
+            <span> ‎ ‎ ‎ ‎ ‎ ‎ </span>
             <i class='bx bx-log-in' ></i>
           </div>
           <div class="bottom collapse_sidebar">
-            <span> Collapse</span>
+            <span> ‎ ‎ ‎ ‎ ‎ ‎ </span>
             <i class='bx bx-log-out'></i>
           </div>
         </div>
       </div>
     </nav>
-
+    <body>
+    <div class="video-container">
+      <div class="box-container">
+        <h1 class="video-title" id="program">What is HTML?</h1>
+        <p class="video-title" id="htmlDescription">
+          HTML stands for Hypertext Markup Language. It's the standard language used to create and design web pages. HTML provides the structure and content of a webpage by using a markup system of tags, defining elements such as headings, paragraphs, images, links, and more.
+</p>
+        <video class="box-container" id="HTML Tutorial for Beginners HTML Crash Course.mp4" controls>
+          <source src="{{ asset('assets/vids/HTML Tutorial for Beginners HTML Crash Course.mp4') }}" type="video/mp4">
+        </video>
+      </div>
+    </div>
     <!-- JavaScript -->
     <script src="script.js"></script>
   </body>

@@ -309,7 +309,8 @@ Can contain mixed types
 <br>
 <h4 style="text-align:left;">Programming example</h4>
 
-// image here 
+<img src="{{ asset('assets/images/pythonmedium1.png') }}">
+
 
 
 <br><br>

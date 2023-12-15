@@ -9,43 +9,13 @@
     <title>Library Management System</title>
     <link rel="stylesheet" href="{{ asset('assets/css/video.css') }}" />
   </head>
-  <style>
-    .body{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        background-color: #f5f5f5;
-    }
 
-    video {
-        margin: auto;
-        display: block; /* This ensures that the margin: auto works */
-        width: 640px; /* Set your desired width */
-        height: 360px; /* Set your desired height */
-    }
-</style>
-
-  <body>
-    <br><br><br><br>
-    <div class="video-container">
-    <h1 class="video" id="Title">Videos</h1>
-    <br><br><br><br>
-    <h1 class="video-title" id="program">What is Python?</h1>
-    </div>
-    <div style="width: 300px; word-wrap: break-word;"></div>
-    <h3 class="video-title">
-      Python is a high-level, versatile programming language known for its simplicity and readability. It's designed to be easy to understand and write, making it suitable for beginners and experienced programmers alike. Python supports multiple programming paradigms, including procedural, object-oriented, and functional programming.</h3>
-    <video id="pythonTutorial" controls>
-                <source src="{{ asset('assets/vids/Python Tutorial - Python Full Course for Beginners.mp4') }}" type="video/mp4">
-    </video>
     <!-- navbar -->
     <nav class="navbar">
       <div class="logo_item">
         
         <i class="bx bx-menu" id="sidebarOpen"></i>
-        <img src="img/TS Logo.png" alt="">TECH SKILL
+        <img src="{{ asset('assets/images/TS Logo.png') }}" alt="">TECH SKILL
       </div>
 
 
@@ -97,24 +67,40 @@
               <span class="navlink">Videos</span>
             </a>
           </li>
-		  
+  
+		  <ul class="menu_items">
+          <li class="item">
+            <a href="flashcards" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bxs-card"></i>
+              </span>
+              <span class="navlink">Flashcard</span>
+            </a>
+          </li>
+		
           <!-- end -->
 		  
         <!-- Sidebar Open / Close -->
         <div class="bottom_content">
           <div class="bottom expand_sidebar">
-            <span> Expand</span>
+            <span> ‎ ‎ ‎ ‎ ‎ ‎ </span>
             <i class='bx bx-log-in' ></i>
           </div>
           <div class="bottom collapse_sidebar">
-            <span> Collapse</span>
+            <span> ‎ ‎ ‎ ‎ ‎ ‎ </span>
             <i class='bx bx-log-out'></i>
           </div>
         </div>
       </div>
     </nav>
-
-    <!-- JavaScript -->
+    <body>
+    <div class="video-container">
+      <div class="box-container">
+        <h1 class="video-title" id="program">What is Python?</h1>
+        <p class="video-title" id="htmlDescription">
+        Python is a high-level, versatile programming language known for its simplicity and readability. It's designed to be easy to understand and write, making it suitable for beginners and experienced programmers alike. Python supports multiple programming paradigms, including procedural, object-oriented, and functional programming.</p>
+        <video class="box-container" id="HTML Tutorial for Beginners HTML Crash Course.mp4" controls>
+        <source src="{{ asset('assets/vids/Python Tutorial - Python Full Course for Beginners.mp4') }}" type="video/mp4">    <!-- JavaScript -->
     <script src="script.js"></script>
   </body>
 </html>

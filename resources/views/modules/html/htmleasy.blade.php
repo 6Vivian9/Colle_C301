@@ -112,7 +112,7 @@
 <h4 style="text-align:left;">A Simple HTML Document</h4>
 <b>Examples:</b>
 
- // image here 
+<img src="{{ asset('assets/images/htmleasy1.png') }}">
 
 
 <b>Example Explained</b>
@@ -131,7 +131,7 @@
 <b>What is an HTML Element?</b>
 <p>An HTML element is defined by a start tag, some content, and an end tag:</p>
 
-// image here 
+<img src="{{ asset('assets/images/htmleasy2.png') }}">
 
 <p><b>Note:</b> Some HTML elements have no content (like the <br> element). These elements are called empty elements. Empty elements do not have an end tag!</p>
 
@@ -140,13 +140,13 @@
 <p>The purpose of a web browser (Chrome, Edge, Firefox, Safari) is to read HTML documents and display them correctly.</p>
 <p>A browser does not display the HTML tags, but uses them to determine how to display the document:</p>
 
-// image here 
+<img src="{{ asset('assets/images/htmleasy3.png') }}">
 
 <br>
 <h4 style="text-align:left;">HTML Page Structure</h4>
 <p>Below is a visualization of an HTML page structure:</p>
 
-// image here 
+<img src="{{ asset('assets/images/htmleasy4.png') }}">
 
 <p><b>Note:</b> The content inside the < body> section will be displayed in a browser. The content inside the < title> element will be shown in the browser's title bar or in the page's tab</p>
 
@@ -154,7 +154,7 @@
 <h4 style="text-align:left;">HTML History</h4>
 <p>Since the early days of the World Wide Web, there have been many versions of HTML:</p>
 
-// image here 
+<img src="{{ asset('assets/images/htmleasy5.png') }}">
 
 <br>
 <h2 style="text-align:left;">HTML Basic Examples</h2>
@@ -163,7 +163,7 @@
 <p>The HTML document itself begins with < html> and ends with < /html>.</p>
 <p>The visible part of the HTML document is between < body> and < /body>.</p>
 
-// image here 
+<img src="{{ asset('assets/images/htmleasy6.png') }}">
 
 <br>
 <h4 style="text-align:left;">The <!DOCTYPE> Declaration</h4>
@@ -180,7 +180,7 @@
 <br>
 <b>Examples:</b>
 
-// image here 
+<img src="{{ asset('assets/images/htmleasy7.png') }}">
 
 <br>
 <h4 style="text-align:left;">HTML Paragraphs</h4>
@@ -188,7 +188,7 @@
 
 <b>Example</b>
 
-// image here 
+<img src="{{ asset('assets/images/htmleasy8.png') }}">
 
 <br>
 <h4 style="text-align:left;">HTML Links</h4>
@@ -217,11 +217,6 @@
 <br>
 <b>Inspect an HTML Element:</b>
 <p>Right-click on an element (or a blank area), and choose "Inspect" to see what elements are made up of (you will see both the HTML and the CSS). You can also edit the HTML or CSS on-the-fly in the Elements or Styles panel that opens.</p>
- 
-<br><br>
-<h2 style="text-align:left;">Take Quiz:</h2>
-<br>
-<h5 onclick="htmleasy()">Click Me To Take Quiz</h5>
 
 
             </div>
