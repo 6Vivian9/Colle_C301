@@ -102,6 +102,7 @@
     <div>
       <h1 style="text-align:center;">JAVA EASY QUIZ</h1>
       <br>
+  
         <ol>
       <li>What is a class in java?</li>
       <input type="radio" name="question1" id="correct1">A. A class is a blueprint from which individual objects are created. A class can contain fields and methods to describe the behavior of an object.<br>

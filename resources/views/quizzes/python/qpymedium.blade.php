@@ -100,10 +100,9 @@
                 
           <form id="quizForm">
     <div>
-      <h1 style="text-align:center;">HTML EASY QUIZ</h1>
+      <h1 style="text-align:center;">PYTHON MEDIUM QUIZ</h1>
       <br>
         <ol>
-
         
         <li>What was the original meaning of the abbreviation PHP?</li>
       <input type="radio" name="question1" id="correct1">A. Personal Homepage<br>

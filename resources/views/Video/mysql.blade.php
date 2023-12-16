@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="{{ asset('assets/images/Favicon.png') }}">
+
     <!-- Boxicons CSS -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -94,6 +96,9 @@
       </div>
     </nav>
     <body>
+    <div class="content">
+      <p><a href="video">videos</a> > <a href="mysql">mysql</a></p>
+    </div>
     <div class="video-container">
       <div class="box-container">
         <h1 class="video-title" id="program">What is MySQL?</h1>
@@ -102,6 +107,8 @@
         <video class="box-container" id="HTML Tutorial for Beginners HTML Crash Course.mp4" controls>
         <source src="{{ asset('assets/vids/JavaScript Tutorial for Beginners Learn JavaScript.mp4') }}" type="video/mp4">    </div>
     <!-- JavaScript -->
-    <script src="script.js"></script>
+</div>
+</div>
+    <script src="{{ asset('assets/js/video.js') }}"></script>
   </body>
 </html>

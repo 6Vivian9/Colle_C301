@@ -100,6 +100,8 @@
                 
           <form id="quizForm">
     <div>
+    <h1 style="text-align:center;">HTML HARD QUIZ</h1>
+      <br>
         <ol>
       <li>What is HTML's role in web development?</li>
       <input type="radio" name="question1">A.Controlling server operations<br>

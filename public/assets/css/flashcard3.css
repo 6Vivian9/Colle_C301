@@ -16,7 +16,8 @@
 
 body {
   display: flex;
-  background-color: var(--white-color);
+  background-image:url('../images/background1.jpg');
+  background-size: cover;
 }
 
 body.dark {
@@ -96,7 +97,6 @@ body.dark {
 
 /* sidebar */
 .sidebar {
-  background-color: var(--white-color);
   width: 230px;
   position: fixed;
   top: 0;
@@ -330,9 +330,13 @@ header {
   padding: 50px;
   text-align: center;
 }
+.content {
+  margin-top: 90px; /* Adjust this value based on your navbar height /
 
+
+  / Add any other styling you may need for the content */
+}
 nav {
-  background-color: var(--white-color);
   color: #fff;
   padding: 50px;
 }

@@ -107,6 +107,7 @@
             <h2 class="profile-title">Computer Science Student</h2>
             <p class="profile-email">rnvillavivenncio@cca.edu.ph</p>
             <p class="profile-phone">09294829411</p>
+            <a href="/"><button type="submit">Logout</button></a>
         </div>
 </div>
         <!-- Pop up edit profile -->

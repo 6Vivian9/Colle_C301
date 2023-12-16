@@ -17,7 +17,8 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: var(--white-color);
+  background-image:url('../images/background1.jpg');
+  background-size: cover;
   transition: all 0.5s ease;
   display: flex;
   justify-content: center;
@@ -103,7 +104,6 @@ body.dark {
 
 /* sidebar */
 .sidebar {
-  background-color: var(--white-color);
   width: 230px;
   position: fixed;
   top: 0;
@@ -335,9 +335,13 @@ header {
   padding: 50px;
   text-align: center;
 }
+.content {
+  margin-top: 90px; /* Adjust this value based on your navbar height /
 
+
+  / Add any other styling you may need for the content */
+}
 nav {
-  background-color: var(--white-color);
   color: #fff;
   padding: 50px;
 }
@@ -600,7 +604,6 @@ button{
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
-  margin-top: 100px;
 }
 
 .preview-container {

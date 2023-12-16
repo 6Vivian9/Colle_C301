@@ -100,6 +100,8 @@
                 
           <form id="quizForm">
     <div>
+    <h1 style="text-align:center;">JAVASCRIPT EASY QUIZ</h1>
+      <br>
         <ol>
       <li> What is JavaScript primarily used for? </li>
       <input type="radio" name="question1"> A. Graphic design<br>

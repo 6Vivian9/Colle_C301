@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="{{ asset('assets/images/Favicon.png') }}">
+
     <!-- Boxicons CSS -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="{{ asset('assets/images/Favicon.png') }}">
@@ -129,7 +131,7 @@
       
     </div>
     <!-- JavaScript -->
-    <script src="{{ asset('assets/js/video.css') }}"></script>
+    <script src="{{ asset('assets/js/video.js') }}"></script>
     
 
 

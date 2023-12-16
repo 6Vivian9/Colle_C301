@@ -2,6 +2,8 @@
 
 <head> 
   <link rel="stylesheet" href="{{ asset('assets/css/lms-login.css') }}">
+  <link rel="icon" type="image/x-icon" href="{{ asset('assets/images/Favicon.png') }}">
+
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 

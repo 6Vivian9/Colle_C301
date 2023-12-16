@@ -100,7 +100,7 @@
                 
           <form id="quizForm">
     <div>
-      <h1 style="text-align:center;">HTML EASY QUIZ</h1>
+      <h1 style="text-align:center;">PHP EASY QUIZ</h1>
       <br>
         <ol>
         <li>What does PHP stand for?</li>

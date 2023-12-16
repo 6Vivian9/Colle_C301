@@ -84,19 +84,18 @@
 			
 		  <!-- Sidebar Open / Close -->
 		  <div class="bottom_content">
-			<div class="bottom expand_sidebar">
-			  <span> Expand</span>
-			  <i class='bx bx-log-in' ></i>
-			</div>
-			<div class="bottom collapse_sidebar">
-			  <span> Collapse</span>
-			  <i class='bx bx-log-out'></i>
-			</div>
-		  </div>
-		</div>
-	  </nav>
-
-<main>
+          <div class="bottom expand_sidebar">
+            <span> ‎ ‎ ‎ ‎ ‎ ‎ </span>
+            <i class='bx bx-log-in' ></i>
+          </div>
+          <div class="bottom collapse_sidebar">
+            <span> ‎ ‎ ‎ ‎ ‎ ‎ </span>
+            <i class='bx bx-log-out'></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
 <div class="flash_container">
 			<!-- Title -->
 			<h1>FLASHCARDS GUESSING GAME</h1>

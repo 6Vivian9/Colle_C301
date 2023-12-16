@@ -12,13 +12,19 @@
   --grey-color: #707070;
   --grey-color-light: #aaa;
 }
+.content {
+  margin-top: 90px; /* Adjust this value based on your navbar height /
 
+
+  / Add any other styling you may need for the content */
+}
 body {
   font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: var(--white-color);
+  background-image:url('../images/background1.jpg');
+  background-size: cover;
 }
 
 body.dark {
@@ -98,7 +104,6 @@ body.dark {
 
 /* sidebar */
 .sidebar {
-  background-color: var(--white-color);
   width: 230px;
   position: fixed;
   top: 0;
@@ -374,7 +379,6 @@ header {
 }
 
 nav {
-  background-color: var(--white-color);
   color: #fff;
   padding: 50px;
 }

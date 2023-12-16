@@ -8,6 +8,7 @@ use App\Services\BreadcrumbService;
 use Illuminate\Support\Facades\DB;
 use App\Models\QuizQuestion;
 
+
 class AuthController extends Controller
 {
     protected $breadcrumbService;
@@ -72,6 +73,10 @@ class AuthController extends Controller
         $user = ts_user::where('email', $request->input('Email'))
             ->where('pword', $request->input('Password'))
             ->first();
+
+            if (!$user) {
+                return response('No user found with the provided email address.');
+            }
 
         if ($user->is_active == 0) {
             return response('Your Account is inactive!');

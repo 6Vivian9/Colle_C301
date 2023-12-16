@@ -93,8 +93,13 @@
         </div>
       </div>
     </nav>
+    
     <main>
+
       <nav>
+      <div class="content">
+      <p><a href="library">library</a> > <a href="htmleasy">html easy module</a></p>
+    </div>
         <div class="flex-container">
           <div class="box">
                 
@@ -217,7 +222,10 @@
 <br>
 <b>Inspect an HTML Element:</b>
 <p>Right-click on an element (or a blank area), and choose "Inspect" to see what elements are made up of (you will see both the HTML and the CSS). You can also edit the HTML or CSS on-the-fly in the Elements or Styles panel that opens.</p>
-
+<br><br>
+<h2 style="text-align:left;">Take Quiz:</h2>
+<br>
+<h5 onclick="htmleasy()">Click Me To Take Quiz</h5>
 
             </div>
         </div>
