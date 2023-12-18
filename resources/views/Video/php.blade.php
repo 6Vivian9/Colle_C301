@@ -95,17 +95,21 @@
         </div>
       </div>
     </nav>
+
     <body>
-    <div class="content">
-      <p><a href="video">videos</a> > <a href="php">php</a></p>
-    </div>
+
     <div class="video-container">
       <div class="box-container">
-        <h1 class="video-title" id="program">What is PHP?</h1>
+      <div class="content">
+      <p><a href="video">videos</a> > <a href="php">PHP Video</a></p>
+    </div>
+    <h1 class="video-title" id="program">What is PHP?</h1>
         <p class="video-title" id="htmlDescription">
         PHP is a server-side scripting language designed primarily for web development but can be used as a general-purpose programming language. PHP stands for Hypertext Preprocessor. It's embedded within HTML and executed on the server, generating dynamic web pages.</p>
         <video class="box-container" id="HTML Tutorial for Beginners HTML Crash Course.mp4" controls>
-        <source src="{{ asset('assets/vids/PHP Tutorials PHP For Beginners.mp4') }}" type="video/mp4">        <source src="{{ asset('assets/vids/JavaScript Tutorial for Beginners Learn JavaScript.mp4') }}" type="video/mp4">    </div>
+        <source src="{{ asset('assets/vids/PHP Tutorials PHP For Beginners.mp4') }}" type="video/mp4">  </div>
+     </div>
+    </div>
     <!-- JavaScript -->
     <script src="{{ asset('assets/js/video.js') }}"></script>
   </body>

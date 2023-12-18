@@ -99,6 +99,7 @@
     </nav>
     <main>
       <nav>
+      <h1 class="headertitle"> DashBoard </h1>
         <div class="flex-container">
           <div class="box" onclick="menujavapop()">
                 <img src="{{ asset('assets/images/Java.png') }}">

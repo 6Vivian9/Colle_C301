@@ -293,6 +293,8 @@ function javamodulebtn(){
       document.getElementById("info-csharpMpop" ).style.display = "none";
     }
 
+// modules routes
+
     function javamodulebtn1() {
       window.location.href = "javaeasy";
     }

@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 :root {
@@ -14,22 +15,31 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  margin: 0;
-  padding: 0;
+  display: flex;
   background-image:url('../images/background1.jpg');
   background-size: cover;
-  transition: all 0.5s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+
+}
+
+.headertitle { 
+  color: #7c795d; 
+  font-family: 'Trocchi', serif; 
+  font-size: 60px; 
+  font-weight: normal; 
+  line-height: 48px; 
+  margin: 0; 
+  text-align: center;
+  padding-left: 100px;
 }
 
 body.dark {
   background-color: #333;
 }
+.content {
+  margin-top: -80px;
+  margin-left: -1000px;
 
+}
 body.dark {
   --white-color: #333;
   --blue-color: #fff;
@@ -100,7 +110,6 @@ body.dark {
   font-size: 20px;
   color: var(--white-color);
 }
-
 
 /* sidebar */
 .sidebar {
@@ -279,10 +288,12 @@ body.dark {
 .sidebar.close .bottom_content {
   width: 50px;
   left: 15px;
+
 }
 
 .sidebar.close .bottom span {
   display: none;
+
 }
 
 .sidebar.hoverable .collapse_sidebar {
@@ -293,8 +304,7 @@ body.dark {
   display: none;
 }
 
-/* Mobile Styles */
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   #sidebarOpen {
     font-size: 25px;
     display: block;
@@ -305,6 +315,7 @@ body.dark {
 
   .sidebar.close {
     left: -100%;
+    padding: 18px 0;
   }
 
   .search_bar {
@@ -329,42 +340,27 @@ body {
   height: 150vh;
 }
 
-.headertitle { 
-  color: #7c795d; 
-  font-family: 'Trocchi', serif; 
-  font-size: 60px; 
-  font-weight: normal; 
-  line-height: 48px; 
-  margin: 0; 
-  text-align: center;
-  padding-left: 100px;
-}
-
 header {
   background-color: #fff;
   color: #fff;
   padding: 50px;
   text-align: center;
 }
-.content {
-  margin-top: 90px; /* Adjust this value based on your navbar height /
 
-
-  / Add any other styling you may need for the content */
-}
 nav {
   color: #fff;
   padding: 50px;
+  padding-top: 30px;
 }
 
 .flex-container {
   display: flex;
   gap: 10px;
-  margin-left: 170px;
+  margin-left: 90px;
 }
 
 .box {
-  flex: 1 0 21%;
+  width: 400px; /* Set your desired width */
   padding: 100px;
   background-color: #5d89ba;
   border-radius: 50px;
@@ -372,18 +368,24 @@ nav {
   cursor: pointer;
   transition: background-color 0.3s;
   margin: 5px;
-  text-align: center;
+  flex-grow: 3; /* Allow the box to grow */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding: 20px;
 }
 
 .box img {
-  width: 75%;
+  width: 220px;
+  margin-bottom: 20px; /* Adjust margin as needed */
   height: auto;
 }
 
@@ -392,26 +394,35 @@ nav {
 }
 
 main {
-  padding: 100px;
+  padding: 10px;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
 
 @media (max-width: 800px) {
   .box {
-    flex: 1 0 46%; /* 2 boxes per row */
+    width: calc(50% - 10px); /* Two boxes per row with some margin in between */
+  }
+}
+
+@media (max-width: 800px) {
+  main {
+    padding: 100px 20px; /* Adjust padding as needed */
   }
 }
 
 @media (max-width: 500px) {
   .box {
-    flex: 1 0 96%; /* 1 box per row */
+    width: calc(100% - 10px); /* One box per row with some margin */
   }
 }
 
-/* popup info*/
+/* popup info */
 
 .menupopup {
   width: 800px;
-  height: 400px;
+  height: 260px;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -421,6 +432,7 @@ main {
   box-shadow: 5px 5px 10px gray;
   display: none;
   border-radius: 20px;
+  text-align: right;
 }
 
 .menupopup h2 {
@@ -430,19 +442,18 @@ main {
 
 .menupopup p {
   text-align: justify;
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+
 }
 
-.menupopup:hover {
-  color: var(--white-color);
-  background: #FFAF4D;
-}
 
 /* Style the buttons inside the pop up */
 .menupopup button {
   justify-content: center;
   display: inline-block;
-  margin: 13px;
+  margin-right: 10px;
+  margin-top: -5px;
   padding: 10px;
   border: none;
   background-color: #5d89ba;
@@ -451,12 +462,11 @@ main {
   cursor: pointer;
 }
 
-/* difficulty pop up*/
+/* difficulty pop up */
 .popup {
   width: 380px;
-  height: 180px;
+  height: 150px;
   position: fixed;
-  padding: 10px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -478,284 +488,19 @@ main {
   padding: 10px;
 }
 
+.popup :hover {
+  color: var(--white-color);
+  background: #FFAF4D;
+}
 
 /* Style the buttons inside the pop up */
 .popup button {
   display: inline-block;
-  margin-top: 10px;
-  padding: 6px;
+  margin: 13px;
+  padding: 10px;
   border: none;
   background-color: #5d89ba;
   color: var(--white-color);
   border-radius: 10px;
   cursor: pointer;
-}
-
-/* Profile */
-.profile-picture {
-  width: 75px;
-  height: 75px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.profile-name {
-  margin: 10px 0;
-  font-size: 24px;
-}
-
-.profile-title {
-  margin: 5px 0;
-  font-size: 18px;
-  color: #666;
-}
-
-.profile-email,
-.profile-phone {
-  margin: 5px 0;
-  font-size: 14px;
-  color: #333;
-}
-
-.progress {
-  display: flex;
-  height: 660px;
-  width: 1123px;
-  padding-left: 15px;
-  padding-right: 171px;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-
-.progress-container {
-  padding: 20px;
-}
-
-.progress-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  width: fit-content;
-  margin-top: 10px;
-}
-
-.progress-bar {
-  height: 35px;
-  width: 500px;
-}
-
-.progress-bars {
-  display: flex;
-  justify-content: space-between;
-}
-
-.title {
-  margin-bottom: 10px;
-}
-
-.percent {
-  margin-left: 10px;
-  font-weight: bold;
-}
-
-.chart-container {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 12px;
-  align-items: center;
-  margin: auto;
-}
-
-
-
-.progress-pie {
-  width: 250px !important;
-  height: 250px !important;
-}
-
-
-.chart-box {
-  width: calc(33.33% - 20px);
-  padding: 20px;
-  margin: 10px;
-  display: flex;
-  align-items: center; /* Center vertically */
-  justify-content: center;
-  flex-direction: column;
-  text-align: center; /* Center text horizontally */
-}
-
-.progress-title {
-  color: #000000;
-  margin-bottom: 10px;
-  font-size: 30px;
-  text-align: center;
-}
-
-.progress-percentatge {
-  font-size: 40px;
-}
-
-
-.box-end {
-  border: none !important;
-}
-
-/* Popup Edit profile */
-.popup#editProfilePicturePopup{
-  width: 400px;
-}
-button{
-  background-color: #5d89ba;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.preview-container {
-  margin-top: 10px;
-}
-
-#previewImage {
-  max-width: 100%;
-  max-height: 150px;
-  margin-top: 1000px;
-}
-.edit-profile-icon {
-  font-size: 20px;
-  color: #130e0e; /* Adjust the color as needed */
-  cursor: pointer;
-  margin-right: 10px; /* Adjust the margin as needed */
-}
-
-@media screen and (max-width: 1200px) {
-  .progress {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-  
-  .progress-bar {
-    width: 100%;
-  }
-  
-  .chart-container {
-    width: 100%;
-    padding: 10px;
-  }
-  
-  .chart-box {
-    width: 100%;
-    padding: 10px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .chart-box {
-    width: calc(50% - 20px);
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .chart-box {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .progress {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  
-  .progress-bar {
-    width: 100%;
-  }
-  
-  .chart-container {
-    width: 100%;
-    padding: 10px;
-  }
-  
-  .chart-box {
-    width: 100%;
-    padding: 10px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .progress {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  
-  .progress-bar {
-    width: 100%;
-  }
-  
-  .chart-container {
-    width: 100%;
-    padding: 5px;
-  }
-  
-  .chart-box {
-    width: 100%;
-    padding: 5px;
-  }
-
-.chart-box {
-  width: calc(33.33% - 20px);
-  padding: 20px;
-  margin: 10px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-}
-
-/* Adjustments for smaller screens */
-@media screen and (max-width: 768px) {
-  .chart-box {
-    width: calc(50% - 20px);
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .chart-box {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .navbar_content {
-    column-gap: 15px;
-  }
-
-  .navbar_content .bi-grid,
-  .navbar_content .bx-sun,
-  .navbar_content .bx-bell,
-  .navbar_content .profile {
-    font-size: 18px;
-  }
-
-  .navbar_content .bi-grid,
-  .navbar_content .bx-sun,
-  .navbar_content .bx-bell,
-  .navbar_content .profile img {
-    height: 25px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .navbar_content {
-    flex-direction: column;
-    align-items: flex-end;
-    column-gap: 0;
-  }
-}
-
 }

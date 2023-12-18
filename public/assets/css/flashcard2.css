@@ -49,10 +49,7 @@
   .btn:hover {
     background-color: #FFAF4D;
   }
-  
-  main {
-    padding: 100px;
-  }
+
   @media (max-width: 800px) {
     .box { 
         flex: 1 0 46%; /* 2 boxes per row */

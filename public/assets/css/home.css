@@ -21,6 +21,17 @@ body {
 
 }
 
+.headertitle { 
+  color: #7c795d; 
+  font-family: 'Trocchi', serif; 
+  font-size: 60px; 
+  font-weight: normal; 
+  line-height: 48px; 
+  margin: 0; 
+  text-align: center;
+  padding-left: 100px;
+}
+
 body.dark {
   background-color: #333;
 }
@@ -340,6 +351,7 @@ header {
 nav {
   color: #fff;
   padding: 50px;
+  padding-top: 30px;
 }
 
 .flex-container {

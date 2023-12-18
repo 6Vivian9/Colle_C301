@@ -6,6 +6,17 @@
   font-family: "Poppins", sans-serif;
 }
 
+.headertitle { 
+  color: #7c795d; 
+  font-family: 'Trocchi', serif; 
+  font-size: 60px; 
+  font-weight: normal; 
+  line-height: 48px; 
+  margin: 0; 
+  text-align: center;
+  padding-left: 100px;
+}
+
 :root {
   --white-color: #fff;
   --blue-color: #4070f4;
@@ -13,8 +24,11 @@
   --grey-color-light: #aaa;
 }
 .content {
-  margin-top: 90px; /* Adjust this value based on your navbar height /
-
+  margin-top: -60px;
+  padding-left: 110px;
+  padding-bottom: 30px;
+  color: black;
+  /* Adjust this value based on your navbar height /
 
   / Add any other styling you may need for the content */
 }
@@ -392,7 +406,7 @@ nav {
 .box {
   width: auto;  
   margin: 0 auto;
-  padding-top: 50px;
+  padding-top: 20px;
   padding-bottom: 50px;
   padding-left: 100px;
   padding-right: 100px;

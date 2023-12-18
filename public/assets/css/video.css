@@ -335,6 +335,7 @@ header {
 nav {
   color: #fff;
   padding: 50px;
+  padding-top: 30px;
 }
 
 .flex-container {
@@ -470,11 +471,25 @@ video {
   height: 500px;
 }
 
+.headertitle { 
+  color: #7c795d; 
+  font-family: 'Trocchi', serif; 
+  font-size: 60px; 
+  font-weight: normal; 
+  line-height: 48px; 
+  margin: 0; 
+  text-align: center;
+  padding-left: 90px;
+}
+
 .content {
-  margin-top: 90px; /* Adjust this value based on your navbar height /
+  margin-top: -48px;
+  margin-left: -702px;
+}
 
-
-  / Add any other styling you may need for the content */
+.contentv2 {
+  margin-top: -48px;
+  margin-left: -649px;
 }
 .container {
   display: flex;
@@ -487,11 +502,6 @@ video {
   height: 100vh;
 }
 
-.main-content {
-  flex: 1;
-  padding-left: 230px; /* Width of the sidebar */
-  transition: all 0.5s ease; /* Add a transition for smooth animation */
-}
 
 .box-container {
   background-color: #5d89ba;
@@ -533,10 +543,4 @@ video {
   color: var(--white-color);
   border-radius: 10px;
   cursor: pointer;
-}
-
-@media screen and (max-width: 768px) {
-  .main-content {
-    padding-left: 0; /* Remove padding when sidebar is closed */
-  }
 }

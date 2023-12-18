@@ -99,6 +99,7 @@
     </nav>
     <main>
   <nav>
+  <h1 class="headertitle"> Videos </h1>
     <div class="flex-container">
       <a href="java" class="box">
         <img src="{{ asset('assets/images/Java.png') }}">

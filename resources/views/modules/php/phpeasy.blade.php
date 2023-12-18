@@ -95,6 +95,10 @@
     </nav>
     <main>
       <nav>
+      <div class="content">
+        <br>
+      <p><a href="library">library</a> > <a href="phpeasy">PHP Easy Module</a></p>
+    </div>
         <div class="flex-container">
           <div class="box">
                 

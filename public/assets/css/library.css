@@ -13,12 +13,18 @@
   --grey-color: #707070;
   --grey-color-light: #aaa;
 }
-.content {
-  margin-top: 90px; /* Adjust this value based on your navbar height /
 
-
-  / Add any other styling you may need for the content */
+.headertitle { 
+  color: #7c795d; 
+  font-family: 'Trocchi', serif; 
+  font-size: 60px; 
+  font-weight: normal; 
+  line-height: 48px; 
+  margin: 0; 
+  text-align: center;
+  padding-left: 100px;
 }
+
 body {
   display: flex;
   background-image:url('../images/background1.jpg');
@@ -320,9 +326,6 @@ body.dark {
 
 body {
   font-family: 'Arial', sans-serif;
-  background-image:url('../images/background1.jpg');
-  background-size: cover;
-
 }
 
 .dashboard-container {
@@ -342,6 +345,7 @@ header {
 nav {
   color: #fff;
   padding: 50px;
+  padding-top: 30px;
 }
 
 .flex-container {

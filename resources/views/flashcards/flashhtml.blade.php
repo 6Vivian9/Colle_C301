@@ -5,9 +5,10 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 		<title>Flashcards</title>
 		<link rel="icon" type="image/x-icon" href="{{ asset('assets/images/Favicon.png') }}">
-        <link rel="stylesheet" href="{{ asset('assets/css/home.css') }}" />
+
         <link rel="stylesheet" href="{{ asset('assets/css/flashcard.css') }}" />
         <link rel="stylesheet" href="{{ asset('assets/css/flashcard2.css') }}" />
+		<link rel="stylesheet" href="{{ asset('assets/css/flashcard4.css') }}" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 </head>  
 <body >
@@ -94,8 +95,10 @@
         </div>
       </div>
     </nav>
+	<div class="content">
+	<p><a href="flashcards">Flashcards</a> > <a href="flashhtml">HTML FlashCards</a></p>
+    </div>
     <main>
-
 	<div class="flash_container">
 		<!-- Title -->
 		<h1>FLASHCARDS GUESSING GAME</h1>

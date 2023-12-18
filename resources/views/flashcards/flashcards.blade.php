@@ -98,6 +98,8 @@
     </nav>
     <main>
   <nav>
+  <h1 class="headertitle"> Flashcards </h1>
+
     <div class="flex-container">
       <a href="flashjava" class="box">
         <img src="{{ asset('assets/images/Java.png') }}">

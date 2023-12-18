@@ -95,6 +95,10 @@
     </nav>
     <main>
       <nav>
+      <div class="content">
+        <br>
+      <p><a href="library">library</a> > <a href="pyeasy">Python Easy Module</a></p>
+    </div>
         <div class="flex-container">
           <div class="box">
                 

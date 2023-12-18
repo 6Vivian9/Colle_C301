@@ -95,6 +95,9 @@
     </nav>
     <main>
       <nav>
+      <div class="content">
+    <p><a href="library">library</a> > <a href="javahard">Java Hard Module</a> > <a href="quizjavahard">Java Hard Quiz</a></p>
+  </div>
         <div class="flex-container">
           <div class="box">
                 

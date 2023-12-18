@@ -327,6 +327,17 @@ body {
   height: 150vh;
 }
 
+.headertitle { 
+  color: #7c795d; 
+  font-family: 'Trocchi', serif; 
+  font-size: 60px; 
+  font-weight: normal; 
+  line-height: 48px; 
+  margin: 0; 
+  text-align: center;
+  padding-left: 100px;
+}
+
 header {
   background-color: #fff;
   color: #fff;
@@ -336,6 +347,7 @@ header {
 .content {
   margin-top: 0px; 
   margin-left: 100px;
+  padding-left: 15px;
   color: black;
   /* Adjust this value based on your navbar height /
 
@@ -344,6 +356,7 @@ header {
 nav {
   color: #fff;
   padding: 50px;
+  padding-top: 30px;
 }
 
 .flex-container {

@@ -95,6 +95,9 @@
     </nav>
     <main>
       <nav>
+      <div class="content">
+    <p><a href="library">library</a> > <a href="pyeasy">Python Easy Module</a> > <a href="quizpythoneasy">Python Easy Quiz</a></p>
+  </div>
         <div class="flex-container">
           <div class="box">
                 

@@ -98,7 +98,8 @@
 
       <nav>
       <div class="content">
-      <p><a href="library">library</a> > <a href="htmleasy">html easy module</a></p>
+        <br>
+      <p><a href="library">library</a> > <a href="htmleasy">HTML Easy Module</a></p>
     </div>
         <div class="flex-container">
           <div class="box">

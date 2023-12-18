@@ -95,15 +95,15 @@
         </div>
       </div>
     </nav>
+
     <body>
-<div class="container">
-    <div class="content">
-      <p><a href="video">videos</a> > <a href="html">html</a></p>
-    </div>
 
     <div class="video-container">
       <div class="box-container">
-        <h1 class="video-title" id="program">What is HTML?</h1>
+      <div class="content">
+      <p><a href="video">videos</a> > <a href="html">HTML Video</a></p>
+    </div>
+    <h1 class="video-title" id="program">What is HTML?</h1>
         <p class="video-title" id="htmlDescription">
           HTML stands for Hypertext Markup Language. It's the standard language used to create and design web pages. HTML provides the structure and content of a webpage by using a markup system of tags, defining elements such as headings, paragraphs, images, links, and more.
 </p>

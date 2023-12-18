@@ -6,7 +6,7 @@
     <link rel="icon" type="image/x-icon" href="{{ asset('assets/images/Favicon.png') }}">
 
 		<title>Flashcards</title>
-        <link rel="stylesheet" href="{{ asset('assets/css/home.css') }}" />
+		<link rel="stylesheet" href="{{ asset('assets/css/flashcard4.css') }}" />
         <link rel="stylesheet" href="{{ asset('assets/css/flashcard.css') }}" />
         <link rel="stylesheet" href="{{ asset('assets/css/flashcard2.css') }}" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
@@ -95,6 +95,9 @@
         </div>
       </div>
     </nav>
+	<div class="content">
+	<p><a href="flashcards">Flashcards</a> > <a href="flashjava">Java FlashCards</a></p>
+    </div>
     <main>
 <div class="flash_container">
 			<!-- Title -->
