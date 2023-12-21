@@ -343,11 +343,6 @@ header {
 }
 
 
-nav {
-  color: #fff;
-  padding: 50px;
-}
-
 .flex-container {
   display: flex;
   gap: 10px;
