@@ -29,8 +29,14 @@
         <i class="bi bi-grid"></i>
         <i class='bx bx-sun' id="darkLight"></i>
         <i class='bx bx-bell' ></i>
-        <a href="profile"><img src="{{ asset('assets/images/profileicon.png') }}" alt="profile" class="profile" /></a>
-      </div>
+
+<div class="dropdown">
+    <img src="{{ asset('assets/images/profileicon.png') }}" onclick="toggleDropdown()" class="dropbtn">
+    <div id="myDropdown" class="dropdown-content">
+      <a href="profile">Profile</a>
+      <a href="/">Logout</a>
+    </div>
+  </div>
     </nav>
 
     <!-- sidebar -->
@@ -62,7 +68,7 @@
 		
 		<ul class="menu_items">
           <li class="item">
-            <a href="videos" class="nav_link">
+            <a href="video" class="nav_link">
               <span class="navlink_icon">
                 <i class="bx bxs-video"></i>
               </span>

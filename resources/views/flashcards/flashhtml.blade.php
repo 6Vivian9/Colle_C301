@@ -26,12 +26,18 @@
 		</div>
   
 		<div class="navbar_content">
-		  <i class="bi bi-grid"></i>
-		  <i class='bx bx-sun' id="darkLight"></i>
-		  <i class='bx bx-bell' ></i>
-		  <a href="profile"><img src="{{ asset('assets/images/profileicon.png') }}" alt="profile" class="profile" /></a>
-		</div>
-	  </nav>
+        <i class="bi bi-grid"></i>
+        <i class='bx bx-sun' id="darkLight"></i>
+        <i class='bx bx-bell' ></i>
+
+<div class="dropdown">
+    <img src="{{ asset('assets/images/profileicon.png') }}" onclick="toggleDropdown()" class="dropbtn">
+    <div id="myDropdown" class="dropdown-content">
+      <a href="profile">Profile</a>
+      <a href="/">Logout</a>
+    </div>
+  </div>
+    </nav>
   
 	  <!-- sidebar -->
 	  <nav class="sidebar">

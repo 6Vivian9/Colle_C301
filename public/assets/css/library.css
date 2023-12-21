@@ -492,3 +492,41 @@ main {
   border-radius: 10px;
   cursor: pointer;
 }
+.dropbtn {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  left: -100px; /* Adjust this value to position the dropdown to the left */
+  border-radius: 10px; /* Add border-radius for rounded corners */
+
+}
+
+/* Style the dropdown items */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 10px; /* Add border-radius for rounded corners */
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+  background-color: #FFAF4D;
+  color: white;
+  border-radius: 8px; /* Add border-radius for rounded corners on hover */
+}
+
+/* Show the dropdown content when the dropdown button is clicked */
+.show {
+  display: block;
+}

@@ -35,7 +35,7 @@
 <div class="dropdown">
     <img src="{{ asset('assets/images/profileicon.png') }}" onclick="toggleDropdown()" class="dropbtn">
     <div id="myDropdown" class="dropdown-content">
-      <a href="profile">Profile</a><br>
+      <a href="profile">Profile</a>
       <a href="/">Logout</a>
     </div>
   </div>
